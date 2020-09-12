@@ -9,7 +9,7 @@ app.use(
         res.status(200).type('html');
 
         if(name){
-            res.write('Hello, ' + name + '<p>' +'Nice to meet you!!')
+            res.write(`Hello, ${name}<p>Nice to meet you!!`)
         }else{
             res.write('Hello World!');
         }
