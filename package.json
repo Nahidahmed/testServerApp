@@ -13,6 +13,8 @@
   "author": "Nahid Ahmed Mansuri <nahid.mansuri@gmail.com> (https://nahidahmed.github.io/learningJS/)",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
     "express": "^4.17.1"
   }
 }

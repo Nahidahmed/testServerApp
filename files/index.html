@@ -5,6 +5,15 @@
     <title>Test Web App</title>
 </head>
 <body>
-    <h1>This is the index.html</h1>
+    <form action="/handleForm" method="POST">
+        Name: <input name="username">
+        <p>
+            I like: <br>
+            <input type="checkbox" name="hobby" value="Web Development">Web Development <br>
+            <input type="checkbox" name="hobby" value="Stock Market">Stock Market <br>
+            <input type="checkbox" name="hobby" value="Project Management">Project Management <br>
+        </p>
+        <input type="submit" value="Submit Form">
+    </form>
 </body>
 </html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Thanks, <%= name  %>!</h1>       
+        <p>You like the below hobbies:
+        <ul>
+            <% hobbies.forEach( (hobby) => { %>
+                <li> <%= hobby %> </li> 
+            <% });%>
+        </ul>    
+        <a href='/public/index.html'>Back to form</a> 
+    </body>
+</html>
