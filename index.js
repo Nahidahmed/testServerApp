@@ -3,7 +3,18 @@ var app = express();
 
 app.use(
     '/',(req,res) => {
-        res.send('Hello World!');
+
+        var name = req.query.name;
+
+        res.status(200).type('html');
+
+        if(name){
+            res.write('Hello, ' + name + '<p>' +'Nice to meet you!!')
+        }else{
+            res.write('Hello World!');
+        }
+
+        res.end();
     }
 );
 
