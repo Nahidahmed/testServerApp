@@ -1,5 +1,5 @@
 # testServerApp
-test server app created using npm
+test server app created using npm node and express frameworks
 
 Information
 
