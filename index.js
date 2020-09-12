@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.use(
-    '/',(req,res) => {
+    '/index',(req,res) => {
 
         var name = req.query.name;
 
@@ -17,6 +17,15 @@ app.use(
         res.end();
     }
 );
+
+app.get('/about',function(res,res){
+        console.log('about routed')
+        res.send('I am Nahid Ahmed Mansuri. I am a project manager.');
+    }
+);
+
+
+app.use('/public',express.static('files'));
 
 app.listen(
     3000, () =>{
