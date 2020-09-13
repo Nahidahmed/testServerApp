@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        All the people added so far:
+        <ul>
+            <% people.forEach( (person) => { %>
+                <li><a href="/person?father=<% = person.name %>"><%= person.father%></a>
+                    <%= person.child%>
+                </li>
+            <% });%>
+        </ul>
+        <br><a href="/files/familydetails.html">Add new family details</a>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="/update" method="POST">
+            Father: <%= person.father %><br> 
+            Child Name:<br> 
+            <input name="child" value='<%= person.chikd %>'><br><br>    
+            <input type="submit" value="Update">
+        </form>
+        <br><a href="/public/familydetails.html">Add new family</a>
+        <br><a href="/all">Show All</a>
+    </body>
+</html>
